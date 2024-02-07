@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wght@400;500;600&family=Montserrat:ital,wght@1,700;1,800&family=Roboto:wght@700&family=Teko:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&family=Roboto:wght@700&family=Teko:wght@600&display=swap');
 
 * {
     margin: 0;
@@ -67,12 +67,13 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     min-width: 1120px;
     height: 60vh;
     gap: 6rem;
 
-    padding: 0rem 2rem;
+    padding: 2rem 4rem;
     margin: auto;
     overflow: clip;
 }
@@ -80,12 +81,44 @@ main {
 .hero--content {
     display: flex;
     flex-direction: column;
+    width: 30rem;
+    height: 16rem;
     gap: 1rem;
 }
 
-.hero--content span
+.emphasis {
+    font-family: Epilogue, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
+.marrom {
+    color: #A45A49;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+hr {
+    border-color: #A45A49;
+}
+
+.amarelo {
+    color: #E7A80E;
+}
+
+.hero--subtitle {
+    color: #C7BAB3;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
 .hero--imagens {
+    position: static;
     column-count: 4;
     column-gap: 1.5rem;
     margin: -1;
@@ -93,4 +126,134 @@ main {
 
 .hero--imagens > figure > img {
     width: 100%;
+}
+
+.btn__container {
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    transform: translate('0, -50%');
+}
+
+.btn {
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #A45A49;
+}
+
+.recipes {
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.recipes--header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.recipes--title {
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFF2E7;
+}
+
+.recipes--subtitle {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #C7BAB3;
+}
+
+.recipes--card--container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0rem 10rem;
+    gap: 2rem;  
+}
+
+.recipes--card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 29rem;
+    background: #241A1C;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+.recipes--card--header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.recipes--card--header--details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.recipe--rate {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #756A67;
+}
+
+.description {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #C7BAB3;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.5rem;
+}
+
+.author--avatar {
+    border-radius: 20rem;
+    width: 1.5rem;
+}
+
+.author--name {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    gap: 0.5rem;
+    background: #23181A;
+}
+
+.footer--copy {
+    color: #FFF2E7;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer--author {
+    color: rgba(255, 242, 231, 0.50);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
 }
