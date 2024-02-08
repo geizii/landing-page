@@ -171,10 +171,9 @@ hr {
 }
 
 .recipes--card--container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 1rem 10rem;
     gap: 2rem;  
 }
 
@@ -199,6 +198,7 @@ hr {
 .recipes--card--header--details {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     gap: 0.5rem;
 }
 
@@ -233,6 +233,21 @@ hr {
     font-size: 1rem;
     font-weight: 600;
     text-align: left;
+}
+
+.btn--loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    background: #A45A49;
 }
 
 footer {
