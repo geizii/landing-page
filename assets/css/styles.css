@@ -235,18 +235,20 @@ hr {
     text-align: left;
 }
 
-.btn--loading {
+.loading--container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.loading {
+.loading--btn {
     font-family: Inter;
     font-size: 1rem;
     font-weight: 400;
     border-radius: 1rem;
+    border: none;
     padding: 1rem 1rem;
+    color: #FFF2E7;
     background: #A45A49;
 }
 
