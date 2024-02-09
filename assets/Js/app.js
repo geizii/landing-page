@@ -1,18 +1,18 @@
-const button = document.querySelector('.loading--btn');
-const card = document.querySelector('.recipes--card');
+const buttonLoading = document.querySelector('.loading--btn');
 
-button.addEventListener('mouseover', function() {
+/* Estilização botão 'carregar mais...'" */
+buttonLoading.addEventListener('mouseover', handleMouseOver);
+buttonLoading.addEventListener('mouseout', handleMouseOut);
+buttonLoading.addEventListener('click', openRecipesWindow);
+
+const handleMouseOver = () => {
     button.style.transform = 'scale(1.1)';
-});
+}
 
-button.addEventListener('mouseout', function() {
+const handleMouseOut = () => {
     button.style.transform = 'scale(1)';
-});
+}
 
-button.addEventListener('click', function () {
-    const newWindow = open ('recipes.html', '_blank');
-});
-
-card.addEventListener('mouseover', function () {
-    style.backgroundColor = '#A45A49';
-})
+const openRecipesWindow = () => {
+    const newWindow = open('recipes.html', '_blank');
+}
